@@ -1,17 +1,19 @@
-//
-//  EmotioApp.swift
-//  Emotio
-//
-//  Created by Arnav Podichetty on 4/30/25.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
-struct EmotioApp: App {
+struct Emotio2App: App {
+    @AppStorage("selectedTheme") private var theme: ThemeOption = .system
+    @AppStorage("selectedAccentColor") private var accent: AccentColorOption = .purple
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                WelcomeView()
+            }
+            .preferredColorScheme(theme == .system ? nil : theme == .light ? .light : .dark)
+            .tint(accent.color)
         }
+        .modelContainer(for: MoodEntry.self)
     }
 }

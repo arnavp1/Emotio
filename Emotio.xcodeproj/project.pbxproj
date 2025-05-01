@@ -35,16 +35,6 @@
 			path = Emotio;
 			sourceTree = "<group>";
 		};
-		476683262DC2EB5B00B100BC /* EmotioTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EmotioTests;
-			sourceTree = "<group>";
-		};
-		476683302DC2EB5B00B100BC /* EmotioUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EmotioUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				476683182DC2EB5700B100BC /* Emotio */,
-				476683262DC2EB5B00B100BC /* EmotioTests */,
-				476683302DC2EB5B00B100BC /* EmotioUITests */,
 				476683172DC2EB5700B100BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				476683252DC2EB5B00B100BC /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				476683262DC2EB5B00B100BC /* EmotioTests */,
-			);
 			name = EmotioTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				4766832F2DC2EB5B00B100BC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				476683302DC2EB5B00B100BC /* EmotioUITests */,
 			);
 			name = EmotioUITests;
 			packageProductDependencies = (
