@@ -119,12 +119,15 @@ enum MoodType: String, CaseIterable, Identifiable {
     case poop               = "💩"
     case ghost              = "👻"
     case skull              = "💀"
+    case monkey             = "🐒"
+    case usa                = "🇺🇸"
     case goat               = "🐐"
     case book               = "📚"
     case potato             = "🥔"
     case fries              = "🍟"
     case mushroom           = "🍄"
-
+    case boba               = "🧋"
+    
     var id: String { rawValue }
 
     var motivationalText: String {
@@ -223,11 +226,16 @@ enum MoodType: String, CaseIterable, Identifiable {
         case .poop:               return "Crummy day? Flush and move on."
         case .ghost:              return "Let go of what haunts you."
         case .skull:              return "Dark humor keeps you resilient."
-        case .goat:               return "You’re in G.O.A.T. mode—own your greatness!"
+        case .monkey:             return "Stay playful and curious—swing into your goals!"
+        case .usa:                return "Bold, brave, and a bit patriotic—stand tall today!"
+        
+        case .goat:               return "WWW GOAT ez dubs!"
         case .book:               return "Might as well be a goblin with the library as your home."
         case .potato:             return "Probably some potato farmer from Idaho or something."
         case .fries:              return "Put the fries in the bag lil bro."
         case .mushroom:           return "Time to a go on a hunt for an elusive fungus."
+        case .boba:               return "A boba a day keeps the doctor away!"
+            
         default:                  return "However you feel, keep moving forward—you’ve got this!"
         }
     }
@@ -291,6 +299,9 @@ enum MoodType: String, CaseIterable, Identifiable {
         case .potato: return .brown.opacity(0.7)
         case .fries: return .yellow
         case .mushroom: return .brown.opacity(0.6)
+        case .boba:     return .purple.opacity(0.7)
+        case .monkey:   return .brown
+        case .usa:      return .blue
 
         // default fallback
         default:
