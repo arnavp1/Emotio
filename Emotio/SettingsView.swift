@@ -32,7 +32,7 @@ struct SettingsView: View {
     @AppStorage("notificationsEnabled") private var notificationsEnabled = true
     @AppStorage("hapticFeedbackEnabled") private var hapticFeedbackEnabled = true
     @AppStorage("selectedTheme") private var selectedTheme: ThemeOption = .system
-    @AppStorage("selectedAccentColor") private var selectedAccentColor: AccentColorOption = .purple
+    @AppStorage("selectedAccentColor") private var selectedAccentColor: AccentColorOption = .orange
 
     var body: some View {
         Form {

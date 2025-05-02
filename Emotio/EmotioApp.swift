@@ -4,7 +4,7 @@ import SwiftData
 @main
 struct Emotio2App: App {
     @AppStorage("selectedTheme") private var theme: ThemeOption = .system
-    @AppStorage("selectedAccentColor") private var accent: AccentColorOption = .purple
+    @AppStorage("selectedAccentColor") private var accent: AccentColorOption = .orange
 
     var body: some Scene {
         WindowGroup {
